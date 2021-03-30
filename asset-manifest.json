@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ilearning/static/css/main.2d6e5031.chunk.css",
+    "main.js": "/ilearning/static/js/main.8c5c95d2.chunk.js",
+    "main.js.map": "/ilearning/static/js/main.8c5c95d2.chunk.js.map",
+    "runtime-main.js": "/ilearning/static/js/runtime-main.0f3ada71.js",
+    "runtime-main.js.map": "/ilearning/static/js/runtime-main.0f3ada71.js.map",
+    "static/js/2.9cfee407.chunk.js": "/ilearning/static/js/2.9cfee407.chunk.js",
+    "static/js/2.9cfee407.chunk.js.map": "/ilearning/static/js/2.9cfee407.chunk.js.map",
+    "static/js/3.7709dc02.chunk.js": "/ilearning/static/js/3.7709dc02.chunk.js",
+    "static/js/3.7709dc02.chunk.js.map": "/ilearning/static/js/3.7709dc02.chunk.js.map",
+    "index.html": "/ilearning/index.html",
+    "static/css/main.2d6e5031.chunk.css.map": "/ilearning/static/css/main.2d6e5031.chunk.css.map",
+    "static/js/2.9cfee407.chunk.js.LICENSE.txt": "/ilearning/static/js/2.9cfee407.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/ilearning/static/media/purple-intersect.a8f00721.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f3ada71.js",
+    "static/js/2.9cfee407.chunk.js",
+    "static/css/main.2d6e5031.chunk.css",
+    "static/js/main.8c5c95d2.chunk.js"
+  ]
+}
