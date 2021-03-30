@@ -1,0 +1,59 @@
+.avatar-user {
+  img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+  }
+  .avatar-img{
+    position: relative;
+    cursor: pointer;
+    span{
+      position:absolute;
+    }
+  }
+ 
+  .name-user {
+    text-transform: capitalize;
+    border-top: none;
+    margin-top: 5px;
+    @include text(black, $fs-20 -2px, $fw-bo);
+  }
+}
+.info-user {
+  .change-inner {
+    margin: 10px 0;
+    .icon-change {
+      padding: 8px;
+      font-size: 27px;
+      cursor: pointer;
+    }
+    .change-off {
+      background-color: rgb(226, 66, 66);
+      @include text(white, $fs-20 - 6px, $fw-bo);
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .icon-change-off {
+      color: rgb(178, 175, 175);
+    }
+    .change-on {
+      background-color: rgb(41, 181, 50);
+      @include text(white, $fs-20 - 6px, $fw-bo);
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .icon-change-on {
+      color: rgb(0, 132, 13);
+    }
+  }
+
+  input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+.icon-tick {
+  font-size: 20px;
+}

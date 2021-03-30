@@ -1,0 +1,134 @@
+.header {
+  background-color: var(--color-1);
+  .logo {
+    color: var(--h-4);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  ul {
+    margin-bottom: 0;
+    li {
+      .nav-link {
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--h-4);
+        &:hover {
+          color: var(--color-2);
+          background-color: var(--color-3);
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .nav-user {
+    li {
+      .icon-user {
+        margin: 0px 8px;
+        color: var(--h-4);
+        font-size: 15px;
+      }
+    }
+    .my-carts {
+      position: relative;
+
+      .length-cart {
+        position: absolute;
+        top: 5px;
+        left: 1px;
+        background-color: red;
+        color: white;
+        padding: 0px 5px;
+        border-radius: 50%;
+        font-size: 10px;
+      }
+    }
+  }
+  .set-colors {
+    min-width: 0;
+    cursor: pointer;
+
+    span {
+      padding: 8px 8px;
+      border: 2px solid white;
+      border-radius: 4px;
+      background-image: linear-gradient(
+        45deg,
+        var(--color-1),
+        var(--color-2),
+        var(--color-3),
+        var(--h-4)
+      );
+      min-width: 0;
+    }
+
+    .set-color-dropdown {
+      min-width: 0;
+      div {
+        text-align: center;
+      }
+      span {
+        border: 2px solid white;
+        border-radius: 0;
+        padding: 0px 8px;
+      }
+    }
+    .active-Color {
+      border: 1px solid black !important;
+    }
+    .dropdown-menu {
+      left: -1px;
+      display: block;
+      top: 125%;
+      background-color: rgb(241, 241, 241);
+      background-clip: padding-box;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.2s;
+      .dropdown-item {
+        &:hover {
+          color: var(--color-3);
+          text-decoration: none;
+          background-color: rgb(241, 241, 241);
+          transition: 0.3s all;
+        }
+      }
+      &.show {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+      }
+    }
+  }
+  .sign {
+    &:hover {
+      border: 1.5px solid white;
+      border-radius: 20px;
+    }
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    margin: 0 5px;
+  }
+  .pop-up {
+    position: absolute;
+    top: 11%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+    z-index: 998;
+    transform: translate(0%, 0%);
+  }
+  @include MediaQuery($sm, down) {
+    .logo {
+      font-size: 20px;
+    }
+    .sign {
+      font-size: 10px !important;
+      padding: 0;
+    }
+  }
+}
+.bg-trans {
+  background-color: transparent;
+}

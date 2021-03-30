@@ -1,0 +1,46 @@
+.top-categories {
+  margin-bottom: 20px;
+
+  .top-categories-title {
+    margin: 20px 0 0;
+    h4 {
+      font-weight: $fw-bo;
+      color: var(--color-5);
+    }
+    .text {
+      color: var(--color-5);
+    }
+  }
+  .dev-container {
+    background-color: var(--color-7);
+    align-content: center;
+    padding: 20px 0;
+    .dev-left {
+      .dev-title {
+        color: var(--t-5);
+        font-weight: $fw-bo;
+        padding-bottom: 10px;
+      }
+      .dev-comment {
+        align-content: center;
+        @include text(var(--t-5), $fs-14, $fw-no);
+      }
+      padding-top: 10px;
+      .explore {
+        @include text(var(--color-5), $fs-14, $fw-bo);
+        margin-top: 10px;
+      }
+    }
+    .dev-right {
+      img {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .categories-course {
+    background-color: var(--color-6);
+    padding: 15px 0;
+  }
+}

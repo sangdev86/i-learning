@@ -1,0 +1,120 @@
+.carts {
+  .carts-body {
+    thead {
+      display: block;
+      tr {
+        display: table;
+        width: calc(100% - 16px);
+        text-align: center;
+      }
+    }
+
+    tbody {
+      display: block;
+      overflow-y: auto;
+      min-height: 400px;
+      max-height: 450px;
+      font-size: 14px;
+      td {
+        vertical-align: middle;
+      }
+      .cart-item {
+        .course-cart {
+          cursor: pointer;
+          transition: all 0.2s;
+          text-decoration: none;
+          color: black;
+          &:hover {
+            .course-name {
+              color: var(--color-2);
+            }
+          }
+          .course-img {
+            img {
+              height: auto;
+              width: 120px;
+              min-height: 30px;
+              min-width: 50px;
+            }
+          }
+        }
+
+        .price-sale {
+          font-weight: bold;
+        }
+        .status-cart {
+          .delete-cart {
+            font-size: 20px;
+            cursor: pointer;
+            color: rgb(224, 34, 34);
+            transition: all 0.2s;
+            padding-bottom: 4px;
+            &:hover {
+              color: black;
+            }
+          }
+          .checkbox {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+    }
+
+    td:nth-child(4),
+    th:nth-child(4) {
+      width: 20%;
+      text-align: center;
+    }
+    td:nth-child(3),
+    th:nth-child(3) {
+      width: 15%;
+      text-align: center;
+    }
+    td:nth-child(2),
+    th:nth-child(2) {
+      width: 60%;
+    }
+    td:nth-child(1),
+    th:nth-child(1) {
+      width: 5%;
+    }
+  }
+  .carts-pay {
+    padding: 30px 20px;
+    background-color: rgb(229, 229, 229);
+    width: 100%;
+    .title-carts {
+      @include text(black, $fs-16, $fw-bo);
+      padding-bottom: 10px;
+    }
+  }
+  @include MediaQuery($md, down) {
+    .col-12,
+    .col-md-8,
+    .col-md-4,
+    .col-6 {
+      padding: 0;
+    }
+    .carts-body {
+      table {
+        tbody {
+          min-height: 1px;
+          max-height: 310px;
+        }
+      }
+      .cart-item {
+        .course-name,
+        .price-sale {
+          font-size: 12px;
+        }
+      }
+      .carts-pay {
+        padding: 10px;
+        .title-carts {
+          display: none;
+        }
+      }
+    }
+  }
+}

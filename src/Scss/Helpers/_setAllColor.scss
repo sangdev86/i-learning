@@ -1,0 +1,160 @@
+// 1. header footer
+// 2.   hover
+// 3.  button
+// 4. Đen
+// 5. Trắng
+
+html[data-theme="one"] {
+  --color-1: #1c232e;
+  --color-2: #00819e;
+  --i-2: #00819e;
+  --color-3: #242d3b;
+  --color-4: white;
+  --h-4: white;
+  --color-5: black;
+  --t-5: rgb(71, 71, 71);
+  --color-6: #f8f9fa;
+  --color-7: #f7f5f3c5;
+  --color-8: #ffffff;
+  --bd-1: #e8e4e4;
+  --b-1: transparent;
+  --b-2: #fff1e1;
+  --banner: url(../../Layouts/Banner/img/banner.jpg);
+}
+
+html[data-theme="two"] {
+  --color-1: #021929;
+  --color-2: #052b45;
+  --i-2: #052b45;
+  --color-3: #042331;
+  --color-4: white;
+  --h-4: white;
+  --color-5: black;
+  --t-5: rgb(71, 71, 71);
+  --color-6: #f8f9fa;
+  --color-7: #f7f5f3c5;
+  --color-8: #ffffff;
+  --bd-1: #e8e4e4;
+  --b-1: transparent;
+  --banner: url(../../Layouts/Banner/img/banner-2.jpg);
+}
+html[data-theme="three"] {
+  --color-1: #292955;
+  --color-2: #6c51b0;
+  --i-2: #6c51b0;
+  --color-3: #3b2a57;
+  --color-4: white;
+  --h-4: white;
+  --color-5: black;
+  --t-5: rgb(71, 71, 71);
+  --color-6: #f8f9fa;
+  --color-7: #f7f5f3c5;
+  --color-8: #ffffff;
+  --bd-1: #e8e4e4;
+  --b-1: transparent;
+  --b-2: #fff1e1;
+  --banner: url(../../Layouts/Banner/img/banner-3.jpg);
+}
+
+html[data-theme="four"] {
+  --color-1: #1f4534;
+  --color-2: #4a9785;
+  --i-2: #4a9785;
+  --color-3: #244e3e;
+  --color-4: white;
+  --h-4: white;
+  --color-5: black;
+  --t-5: rgb(71, 71, 71);
+  --color-6: #f8f9fa;
+  --color-7: #f7f5f3c5;
+  --color-8: #ffffff;
+  --bd-1: #e8e4e4;
+  --b-1: transparent;
+  --b-2: #fff1e1;
+  --banner: url(../../Layouts/Banner/img/banner-4.jpg);
+}
+html[data-theme="five"] {
+  --color-1: #fbc8c8;
+  --color-2: #ea7aa0;
+  --i-2: #ea7aa0;
+  --color-3: #a17272;
+  --color-4: white;
+  --h-4: white;
+  --color-5: black;
+  --t-5: rgb(71, 71, 71);
+  --color-6: #f8f9fa;
+  --color-7: #f7f5f3c5;
+  --color-8: #ffffff;
+  --bd-1: #e8e4e4;
+  --b-1: transparent;
+  --b-2: #fff1e1;
+  --banner: url(../../Layouts/Banner/img/banner.jpg);
+}
+html[data-theme="six"] {
+  --color-1: #242526;
+  --color-2: #3a3b3c;
+  --i-2: white;
+  --color-3: #5e5f61;
+  --color-4: black;
+  --h-4: white;
+  --color-5: white;
+  --t-5: #ecececcc;
+  --color-6: #242526;
+  --color-7: #383838;
+  --color-8: #383838; // course
+  --bd-1: #383838;
+  --b-1: #181818;
+  --b-2: rgb(68, 68, 68);
+  --banner: url(../../Layouts/Banner/img/banner-2.jpg);
+}
+
+@mixin theme($i) {
+  @if ($i == 1) {
+    --color-1: #1c232e;
+    --color-2: #00819e;
+    --color-3: #242d3b;
+    --color-4: white;
+    --color-5: black;
+    --color-6: #f8f9fa;
+  } @else if($i == 2) {
+    --color-1: #021929;
+    --color-2: #21566e;
+    --color-3: #072331;
+    --color-4: white;
+    --color-5: black;
+    --color-6: #f8f9fa;
+  } @else if($i == 3) {
+    --color-1: #292955;
+    --color-2: #6c51b0;
+    --color-3: #3b2a57;
+    --color-4: white;
+    --color-5: black;
+    --color-6: #f8f9fa;
+  } @else if($i == 4) {
+    --color-1: #1f4534;
+    --color-2: #4a9785;
+    --color-3: #244e3e;
+    --color-4: white;
+    --color-5: black;
+    --color-6: #f8f9fa;
+  } @else if($i == 5) {
+    --color-1: #fbc8c8;
+    --color-2: #ea7aa0;
+    --color-3: #a17272;
+    --color-4: white;
+    --color-5: black;
+    --color-6: #f8f9fa;
+  } @else if($i == 6) {
+    --color-1: #242526;
+    --color-2: #3a3b3c;
+    --color-3: #5e5f61;
+    --color-4: black;
+    --color-5: white;
+    --color-6: #242526;
+  }
+}
+@for $i from 1 through 6 {
+  .theme-#{$i} {
+    @include theme($i);
+  }
+}

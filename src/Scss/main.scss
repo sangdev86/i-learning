@@ -1,0 +1,45 @@
+// Base
+@import "./Base/base";
+// Helpers
+@import "./Helpers/variable";
+@import "./Helpers/mixin";
+@import "./Helpers/button";
+@import "./Helpers/setAllColor";
+//Auth
+@import "../auth/OnUser/OnUser";
+// Components
+@import "./Components/khoahoc";
+@import "../Components/Header/Header";
+@import "../Components/Avatar/Avatar";
+@import "../Components/AddCart/AddCart";
+@import "../Popup/Carts/Carts";
+@import "../Components/Category/Category";
+@import "../Components/Course/course";
+@import "../Components//Button/button";
+@import "../Components//ButtonTransparent/ButtonTransparent";
+@import "../Components/SearchBar/searchBar";
+@import "../Components/Footer/Footer";
+@import "../Components/Sidebar/Sidebar";
+
+// Layout
+@import "../Layouts/Banner/Banner";
+@import "../Layouts/Carousel/Carousel";
+@import "../Layouts/TopCategories/TopCategories";
+@import "../Layouts/GetStart/GetStart";
+@import "../Layouts/Founder/Founder";
+
+// screens
+@import "../Screens/Signin/signin";
+@import "../Screens/Courses/Courses";
+@import "../Screens/Blog/Blog";
+@import "../Screens/Event/Event";
+@import "../Screens/Jobs/Jobs";
+@import "../Screens/CourseDetail/CourseDetail";
+// Popup
+@import "../Popup/AllInfomation/AllInfomation";
+
+//Admin
+
+@import "../Templates//AdminTemplate//CourseManager/CourseManager";
+@import "../Popup/ModalAll/ModalAll";
+@import "../Popup//CourseModal/CourseModal";

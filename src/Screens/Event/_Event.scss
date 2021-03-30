@@ -1,0 +1,224 @@
+.event {
+  img {
+    width: 100%;
+    min-height: 300px;
+  }
+  position: relative;
+  .event-content {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    .event-left {
+      padding: 10px;
+      background: linear-gradient(
+        to top,
+        rgba(85, 76, 185, 0.9) 0,
+        rgba(236, 57, 139, 0.9) 100%
+      );
+      margin: 0 100px;
+      border-radius: 50%;
+      .event-inner {
+        padding: 70px;
+        border-radius: 50%;
+        z-index: 999;
+        background-image: url("../Event/banner-circle.jpg");
+        .event-date {
+          @include text(#efa506, $fs-40 + 100px, 700);
+          line-height: $fs-40 + 50px;
+        }
+        .event-month {
+          @include text(white, $fs-40, 700);
+          margin-bottom: 30px;
+        }
+        .event-re {
+          @include text(white, $fs-20 -5px, $fw-bo);
+          padding: 10px;
+          background-color: violet;
+          border: 2px solid violet;
+          border-radius: 5px;
+          &:hover {
+            color: violet;
+            background-color: transparent;
+            border: 2px solid violet;
+          }
+        }
+      }
+    }
+    .event-right {
+      margin-top: 40px;
+      .event-learn {
+        @include text(#efa506, $fs-40 + 28px, $fw-no);
+        line-height: $fs-40 + 20px;
+      }
+      .event-meet {
+        @include text(white, $fs-40 + 40px, 700);
+        line-height: 100px;
+        .c1 {
+          color: #ec398b;
+        }
+        .c2 {
+          color: #efa506;
+        }
+        .c3 {
+          color: #00acee;
+        }
+        .c4 {
+          color: #fff;
+        }
+      }
+      .event-location {
+        @include text(white, $fs-20, 400);
+        .location-icon {
+          color: #efa506;
+        }
+      }
+    }
+  }
+
+  @include MediaQuery($xl, down) {
+    .event-left {
+      padding: 10px;
+      margin: 0 80px !important;
+      .event-inner {
+        padding: 60px !important;
+        .event-date {
+          @include text(#efa506, $fs-40 + 30px !important, 700);
+          line-height: $fs-40 + 5px !important;
+        }
+        .event-month {
+          @include text(white, $fs-20 !important, 700);
+          margin-bottom: 15px !important;
+        }
+        .event-re {
+          @include text(white, $fs-20 -10px !important, $fw-bo);
+          padding: 5px !important;
+        }
+      }
+    }
+
+    .event-right {
+      margin-top: 20px !important;
+      .event-learn {
+        font-size: $fs-40 + 10px !important;
+        line-height: $fs-40 !important;
+      }
+      .event-meet {
+        @include text(white, $fs-40 + 10px !important, 700);
+        line-height: 70px !important;
+      }
+      .event-location {
+        @include text(white, $fs-20 -8px !important, 400);
+      }
+    }
+  }
+  @include MediaQuery($lg, down) {
+    .event-left {
+      padding: 10px;
+      width: 250px;
+      margin: 0 70px !important;
+      .event-inner {
+        padding: 40px !important;
+        .event-date {
+          @include text(#efa506, $fs-40 !important, 700);
+          line-height: $fs-40 + 5px !important;
+        }
+        .event-month {
+          @include text(white, $fs-20 !important, 700);
+          margin-bottom: 15px !important;
+        }
+        .event-re {
+          @include text(white, $fs-20 -14px !important, $fw-bo);
+          padding: 5px !important;
+        }
+      }
+    }
+
+    .event-right {
+      margin-top: 20px !important;
+      .event-learn {
+        font-size: $fs-40 + 10px !important;
+        line-height: $fs-40 !important;
+      }
+      .event-meet {
+        @include text(white, $fs-40 + 10px !important, 700);
+        line-height: 70px !important;
+      }
+      .event-location {
+        @include text(white, $fs-20 -8px !important, 400);
+      }
+    }
+  }
+  @include MediaQuery($md, down) {
+    .event-left {
+      width: 240px;
+      margin: 0 50px !important;
+      .event-inner {
+        padding: 20px !important;
+        .event-date {
+          @include text(#efa506, $fs-40 !important, 700);
+          line-height: $fs-40 + 5px !important;
+        }
+        .event-month {
+          @include text(white, $fs-20 !important, 700);
+          margin-bottom: 15px !important;
+        }
+        .event-re {
+          @include text(white, $fs-20 -15px !important, $fw-bo);
+          padding: 4px !important;
+        }
+      }
+    }
+
+    .event-right {
+      margin-top: 20px !important;
+      .event-learn {
+        font-size: $fs-30 !important;
+        line-height: $fs-30 !important;
+      }
+      .event-meet {
+        @include text(white, $fs-40 - 5px !important, 700);
+        line-height: 40px !important;
+      }
+      .event-location {
+        @include text(white, $fs-20 -8px !important, 400);
+      }
+    }
+  }
+  @include MediaQuery($sm, down) {
+    .event-left {
+      width: 160px;
+      margin: 0 10px !important;
+      .event-inner {
+        padding: 20px !important;
+        .event-date {
+          @include text(#efa506, $fs-30 !important, 700);
+          line-height: $fs-30 !important;
+        }
+        .event-month {
+          @include text(white, $fs-14 !important, 700);
+          margin-bottom: 10px !important;
+        }
+        .event-re {
+          @include text(white, 10px !important, $fw-bo);
+          padding: 4px !important;
+        }
+      }
+    }
+
+    .event-right {
+      margin-top: 20px !important;
+      .event-learn {
+        font-size: $fs-20 !important;
+        line-height: $fs-20 !important;
+      }
+      .event-meet {
+        @include text(white, $fs-20 - 5px !important, 700);
+        line-height: 20px !important;
+      }
+      .event-location {
+        @include text(white, $fs-14 !important, 400);
+      }
+    }
+  }
+}

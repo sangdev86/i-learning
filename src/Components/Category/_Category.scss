@@ -1,0 +1,19 @@
+.category {
+  span {
+    @include text(var(--color-5), $fs-14 + 1, $fw-bo);
+    padding: 10px;
+    &:hover {
+      color: var(--color-2);
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  }
+  margin: 10px 0;
+}
+.a-category {
+  span {
+    color: var(--h-4) !important;
+    background-color: var(--color-3);
+    border-radius: 20px;
+  }
+}

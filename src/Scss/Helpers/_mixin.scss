@@ -1,0 +1,45 @@
+@mixin MediaQuery($type, $upOrDown) {
+  @if ($upOrDown == down) {
+    @if $type == $sm {
+      @media screen and (max-width: $sm - 1px) {
+        @content;
+      }
+    } @else if $type == $md {
+      @media screen and (max-width: $md - 1px) {
+        @content;
+      }
+    } @else if $type == $lg {
+      @media screen and (max-width: $lg - 1px) {
+        @content;
+      }
+    } @else {
+      @media screen and (max-width: $xl - 1px) {
+        @content;
+      }
+    }
+  } @else if($upOrDown == up) {
+    @if $type == $sm {
+      @media screen and (min-width: $sm) {
+        @content;
+      }
+    } @else if $type == $md {
+      @media screen and (min-width: $md) {
+        @content;
+      }
+    } @else if $type == $lg {
+      @media screen and (min-width: $lg) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width: $xl) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}

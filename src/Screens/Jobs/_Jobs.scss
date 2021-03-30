@@ -1,0 +1,239 @@
+.jobs {
+  margin-top: 50px;
+  padding-right: 0;
+
+  .active-tick {
+    border: 1px solid red !important;
+    border-left: 8px solid red !important;
+    // h5,
+    // .reasons,
+    // .tech-item {
+    //   color: var(--color-4) !important;
+    // }
+  }
+  .list-jobs {
+    overflow: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    .search-keywords {
+      padding: 15px 0;
+      width: 100%;
+      @include text(var(--color-5), $fs-20 + 7px, $fw-no);
+    }
+    .jobs-item {
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-left: 8px solid #cccccc;
+      transition: all 0.5s;
+      &:hover {
+        background-color: var(--b-2);
+        // h5,
+        // .reasons,
+        // .tech-item {
+        //   color: var(--color-4) !important;
+        // }
+      }
+      .left-item {
+        .img-company {
+          height: 50px;
+          width: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #cccccc;
+          }
+        }
+      }
+      .center-item {
+        h5 {
+          @include text(var(--color-5), $fs-20 -2px, $fw-bo);
+          line-height: 25px;
+          cursor: pointer;
+          transition: all 0.5s;
+        }
+        // .sign-in-item {
+        //   @include text(#808080, $fs-20 - 6px, $fw-bo);
+        //   cursor: pointer;
+        //   transition: all 0.5s;
+        //   line-height: 28px;
+        //   &:hover {
+        //     color: #525252;
+        //   }
+        // }
+        .reasons {
+          @include text(var(--color-5), $fs-20 - 7px, $fw-bo);
+
+          .reason-item {
+            list-style-type: square;
+            padding: 2px 0;
+          }
+        }
+        // .techs {
+        //   .tech-item {
+        //     color: var(--color-5);
+        //   }
+        // }
+      }
+      .right-item {
+        .status {
+          display: inline-block !important;
+          background-color: #ff9e34;
+          @include text(white, $fs-20 - 8px, $fw-no);
+          padding: 5px;
+          align-self: flex-end; // inline background
+        }
+        .location {
+          @include text(#a6a8ab, $fs-20 - 8px, $fw-no);
+          align-self: flex-end;
+        }
+        .time {
+          @include text(var(--t-5), $fs-20 - 6px, $fw-no);
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+  .job-detail {
+    padding-right: 0;
+
+    .job-title {
+      padding-top: 20px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 55px;
+      background-color: var(--b-1);
+      z-index: 1;
+      h5 {
+        @include text(var(--color-5), $fs-20 + 7px, $fw-no);
+        line-height: 8px;
+      }
+      .company {
+        @include text(var(--t-5), $fs-20 - 7px, $fw-no);
+      }
+      .apply {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(214, 214, 214);
+      }
+    }
+
+    .address {
+      @include text(var(--t-5), $fs-20 - 7px, $fw-no);
+    }
+    .time-ago {
+      padding: 8px 0;
+      @include text(var(--t-5), $fs-20 - 6px, $fw-no);
+      border-bottom: 1px solid rgb(214, 214, 214);
+
+      .calendar-icon {
+        font-size: 20px;
+        padding-bottom: 4px;
+      }
+    }
+    .top-reasons {
+      @include text(var(--color-5), $fs-20 + 3px, $fw-no);
+      // padding: 20px 0;
+      // border-bottom: 1px solid rgb(214, 214, 214);
+      .reasons-list {
+        padding: 2px 0 0 30px;
+        .reason-item {
+          list-style-type: square;
+          padding: 2px 0;
+          @include text(var(--color-5), $fs-20 - 4px, 500);
+        }
+      }
+    }
+    .job-description {
+      .description-title {
+        @include text(var(--color-5), $fs-20 + 3px, $fw-no);
+      }
+      .description-content {
+        @include text(var(--color-5), $fs-20 - 4px, $fw-no);
+      }
+    }
+    .experience {
+      @include text(var(--color-5), $fs-20 + 3px, $fw-no);
+      padding-top: 20px;
+      // border-bottom: 1px solid rgb(214, 214, 214);
+      .experience-list {
+        padding: 2px 0 0 30px;
+        .experience-item {
+          list-style-type: square;
+          padding: 2px 0;
+          @include text(var(--color-5), $fs-20 - 4px, $fw-no);
+        }
+      }
+    }
+    .Why {
+      @include text(var(--color-5), $fs-20 + 3px, $fw-no);
+      padding-top: 20px;
+      // border-bottom: 1px solid rgb(214, 214, 214);
+      .Why-list {
+        padding: 2px 0 0 30px;
+        .Why-item {
+          list-style-type: square;
+          padding: 2px 0;
+          @include text(var(--color-5), $fs-20 - 4px, $fw-no);
+        }
+      }
+    }
+  }
+  .company-footer {
+    padding: 20px;
+    background-color: var(--b-2);
+    .company-left {
+      height: 50px;
+      width: 63px !important;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #cccccc;
+      }
+    }
+    .company-right {
+      margin-left: 20px;
+      .name-company {
+        @include text(var(--color-5), $fs-20 + 4px, $fw-no);
+      }
+      .text-company {
+        @include text(var(--t-5), $fs-20 - 6px, $fw-no);
+        padding: 10px 0;
+      }
+    }
+  }
+  //
+  .techs {
+    @include text(var(--color-5), $fs-20 - 8px, $fw-no);
+    padding-bottom: 8px;
+
+    .tech-item {
+      margin: 0px 5px;
+      padding: 5px;
+      border: 1px solid #292929;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: #fff1e1;
+        background-color: var(--color-2);
+        border: 1px solid var(--color-2);
+      }
+    }
+  }
+  .sign-in-item {
+    @include text(#808080, $fs-20 - 8px, $fw-bo);
+    cursor: pointer;
+    transition: all 0.5s;
+    .money-icon {
+      font-size: 25px;
+      padding-bottom: 1px;
+      padding-right: 5px;
+    }
+    &:hover {
+      color: #525252;
+    }
+  }
+}

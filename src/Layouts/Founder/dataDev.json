@@ -1,0 +1,32 @@
+[
+  {
+    "tille": "Build websites and applications with Web Development",
+    "text": "So what makes the front end of a website possible? Where is all that data stored? This is where the back end comes in. The back end of a website consists of a server, an application, and a database.",
+    "img": "/img/TopCatagories/dev-1.png"
+  },
+  {
+    "tille": "The leader in website design",
+    "text": "Stand out online with a professional website, online store, or portfolio. With Squarespace, you can turn any idea into a reality.",
+    "img": "/img/TopCatagories/dev-2.png"
+  },
+  {
+    "tille": "Mobile App Design Services",
+    "text": "We don’t just create mobile software, we also wrap it in a sleek, responsive and user-friendly design created by your talented UI/UX experts.",
+    "img": "/img/TopCatagories/dev-3.png"
+  },
+  {
+    "tille": "What is Front End Development",
+    "text": "While web design is the way a website looks, front end development is how that design actually gets implemented on the web. A front end web developer is the person who implements web designs through coding languages like HTML, CSS, and JavaScript.",
+    "img": "/img/TopCatagories/dev-4.png"
+  },
+  {
+    "tille": "A full stack developer is a web developer or app develolper",
+    "text": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
+    "img": "/img/TopCatagories/dev-5.png"
+  },
+  {
+    "tille": "Why to Learn Data Structure and Algorithms?",
+    "text": "In mathematics and computer science, an algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation.",
+    "img": "/img/TopCatagories/dev-6.png"
+  }
+]

@@ -1,0 +1,100 @@
+.on-user {
+  cursor: pointer;
+  .show-user {
+    // margin-right: 20px;
+    img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    display: block;
+    top: 125%;
+    left: -60px;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 241);
+    background-clip: padding-box;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.01s;
+    padding: 4px 15px 8px 15px;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      top: 100%;
+    }
+
+    .dropdown-item {
+      padding: 3px 1px;
+      border-top: 1px solid rgb(199, 199, 199);
+
+      .user-icon {
+        margin-right: 7px;
+        @include text(#808080, $fs-20 - 4px, $fw-no);
+      }
+      .text-icon {
+        @include text(#3a3a3a, $fs-20 - 8px, $fw-bo);
+        transition: all 0.3s;
+        &:hover {
+          color: var(--color-2);
+        }
+      }
+      &:hover {
+        color: var(--color-3);
+        text-decoration: none;
+        background-color: rgb(241, 241, 241);
+        transition: 0.3s all;
+      }
+    }
+    .header-inner {
+      border-top: none;
+      .name-user {
+        text-transform: capitalize;
+        border-top: none;
+        margin-bottom: 0;
+        @include text(black, $fs-20 - 4px, $fw-bo);
+      }
+      .web-design {
+        @include text(rgb(128, 128, 128), $fs-20 - 10px, $fw-no);
+        margin-bottom: 0;
+      }
+      .gender {
+        @include text(rgb(128, 128, 128), $fs-20 - 8px, $fw-no);
+        padding: 5px 0;
+        .lable {
+          margin-bottom: 0;
+        }
+        #male,
+        #female {
+          margin-right: 3px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+// .dropdown-item {
+//   border-top: 1px solid rgb(199, 199, 199);
+//   margin: 0 10px;
+//   .user-icon {
+//     margin-right: 7px;
+//     @include text(#808080, $fs-20 - 4px, $fw-no);
+//   }
+//   .text-icon {
+//     @include text(#3a3a3a, $fs-20 - 7px, $fw-bo);
+//   }
+//   &:hover {
+//     color: var(--color-3);
+//     text-decoration: none;
+//     background-color: rgb(241, 241, 241);
+//     transition: 0.3s all;
+//   }
+// }

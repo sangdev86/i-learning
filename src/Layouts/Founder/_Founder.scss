@@ -1,0 +1,109 @@
+.ourfounder {
+  background-color: var(--color-6);
+  padding-bottom: 60px;
+  .ourfoundertop__inner {
+    padding: 40px 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    h4 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: var(--color-5);
+    }
+    p {
+      font-size: 14px;
+      color: var(--t-5);
+    }
+  }
+  .ourfounderbottom__inner {
+    padding: 0 30px;
+    .ourfounderbottom__item {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .namefounder {
+        position: absolute;
+        width: 65%;
+        bottom: 7%;
+        left: 35%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 9px 20px 9px 0;
+        h5 {
+          @include text(white, $fs-14, $fw-no);
+          letter-spacing: 2px;
+        }
+        span {
+          @include text(var(--color-5), $fs-14 - 4px, $fw-no);
+          letter-spacing: 2px;
+        }
+      }
+
+      .ourfounderbottom__hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        border: 20px solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.85);
+        opacity: 0;
+        overflow: hidden;
+        transition: all 1s;
+        &:hover {
+          opacity: 1;
+          .ourfounderbottom__text {
+            top: 11%;
+            left: 0;
+          }
+          .ourfounderbottom__link {
+            top: 23%;
+            left: 50%;
+            transform: translate(-50%, -23%);
+            a {
+              @include text(black, $fs-14 + 2px, $fw-bo);
+              margin: 0 10px;
+            }
+          }
+        }
+        .ourfounderbottom__text {
+          position: absolute;
+          top: -30%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: translate(0%, 0%);
+          transition: all 0.5s;
+          padding: 0 14px;
+
+          h4 {
+            @include text(black, $fs-14, $fw-no);
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+          }
+          p {
+            @include text(rgba(0, 0, 0, 0.623), $fs-14 - 2px, $fw-no);
+            line-height: 30px;
+          }
+        }
+        .ourfounderbottom__link {
+          position: absolute;
+          top: 110% !important;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, 110%);
+          transition: all 0.5s;
+          span {
+            @include text(black, $fs-14 + 1px, $fw-bo);
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

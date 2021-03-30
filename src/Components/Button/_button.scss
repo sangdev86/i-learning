@@ -1,0 +1,15 @@
+.cp-button {
+  text-align: center;
+  background-color: var(--color-2);
+  border: 1.5px solid var(--color-2);
+  color: var(--h-4);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--h-4);
+    color: var(--color-2);
+    border: 1.5px solid var(--color-2);
+    border-radius: none;
+  }
+}

@@ -1,0 +1,13 @@
+.button_1 {
+  background-color: var(--color-2);
+  color: var(--h-4);
+  text-transform: capitalize;
+  font-weight: bold;
+  &:hover {
+    background-color: var(--h-4);
+    color: var(--color-2);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}

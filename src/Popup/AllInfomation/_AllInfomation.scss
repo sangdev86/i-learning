@@ -1,0 +1,101 @@
+@import "./Profile/Profile.scss";
+@import "./CourseUser/CourseUser.scss";
+.all-info {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 70%;
+  max-height: 83%;
+  z-index: 999;
+  transform: translate(-50%, -11%);
+  background-color: #f1f1f1;
+  .header-info {
+    border-bottom: 1px solid #dcdacb;
+    display: flex;
+    justify-content: flex-end;
+    .btn-close {
+      @include text(rgb(226, 66, 66), $fs-20, $fw-no);
+      cursor: pointer;
+      padding: 0 2px;
+    }
+  }
+  .body-info {
+    .body-left {
+      border-right: 1px solid #e7e7e2;
+      padding-right: 0;
+      padding-left: 0;
+
+      // active
+      .activeCategoriesUser {
+        background-color: var(--color-2);
+        color: white;
+        .text-icon {
+          color: white !important;
+        }
+        .user-icon {
+          color: white !important;
+        }
+      }
+
+      .icon-inner {
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0s;
+        &:active {
+          background-color: transparent;
+        }
+
+        .user-icon {
+          margin-right: 7px;
+          @include text(#808080, $fs-20 - 2px, $fw-no);
+        }
+        .text-icon {
+          @include text(#3a3a3a, $fs-20 - 6px, $fw-bo);
+          transition: all 0.3s;
+        }
+      }
+    }
+    .body-right {
+      margin: 10px 0;
+      padding: 0 15px 0 0;
+      .set-item-inner {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        justify-content: center;
+        .set-item-text {
+          padding: 5%;
+          font-weight: 700 !important;
+        }
+      }
+    }
+  }
+}
+@include MediaQuery($lg, down) {
+  .all-info {
+    width: 99%;
+  }
+}
+
+@include MediaQuery($md, down) {
+  .all-info {
+    top: 10%;
+    width: 100%;
+    max-height: 110% !important;
+    overflow: hidden;
+    .body-left {
+      .icon-inner {
+        padding: 8px !important;
+        .user-icon {
+          display: none;
+        }
+        .text-icon {
+          font-size: 10px !important;
+        }
+      }
+    }
+    .body-right {
+      padding: 0 !important;
+    }
+  }
+}

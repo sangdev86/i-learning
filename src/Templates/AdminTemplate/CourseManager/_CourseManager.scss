@@ -1,0 +1,38 @@
+.course-manager {
+  h5 {
+    color: var(--color-5);
+  }
+  .body-manager {
+    .icon-course-manager {
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: yellowgreen !important;
+      }
+    }
+    table {
+      color: var(--color-5);
+      tbody {
+        td {
+          vertical-align: middle;
+        }
+        .course-pagination {
+          .course-item {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .footer-manager {
+    .current-page {
+      input {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  .total-pages {
+    color: var(--color-5);
+  }
+}

@@ -1,0 +1,45 @@
+.blog {
+  margin-top: 100px;
+  color: var(--color-5);
+  .blog-item {
+    cursor: pointer;
+    margin: 30px 0;
+    .img-inner {
+      .blog-img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    .blog-right {
+      .blog-hashtag {
+        @include text(var(--t-5), $fs-16 - 4px, $fw-no);
+      }
+      .blog-title {
+        @include text(var(-color-5), $fs-20 + 6px, $fw-bo);
+        margin: 5px 0 8px 0;
+      }
+      .blog-avatar {
+        height: 30px;
+        width: 30px;
+      }
+      .blog-name,
+      .blog-time {
+        @include text(var(--t-5), $fs-16 - 4px, $fw-no);
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @include MediaQuery($lg, down) {
+    .blog-img {
+      height: 150px !important;
+    }
+  }
+
+  @include MediaQuery($sm, down) {
+    .blog-img {
+      height: 250px;
+    }
+  }
+}

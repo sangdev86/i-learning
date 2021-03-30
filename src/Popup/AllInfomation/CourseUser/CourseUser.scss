@@ -1,0 +1,10 @@
+.my-course {
+  width: 100%;
+  .course-waiting-comfirm {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 550px;
+    padding: 10px;
+  }
+}

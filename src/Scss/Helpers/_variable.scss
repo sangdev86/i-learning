@@ -1,0 +1,46 @@
+// Colors
+// $color-purple: #5a2c7d;
+// $color-pink: #e00d7a;
+// $color-orange: #f18720;
+// $color-yellow: #fecf06;
+// $color-white: #ffffff;
+// $color-black: #000000de;
+
+// Screen sizes
+// $xs: 576px;
+// $sm: 768px;
+// $md: 992px;
+// $lg: 1200px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// Font size
+$fs-16: 16px;
+$fs-14: 14px;
+$fs-20: 20px;
+$fs-25: 25px;
+$fs-30: 30px;
+$fs-40: 40px;
+
+// Padding
+$p-10: 10px;
+$p-15: 15px;
+
+// Margin
+$m-5: 5px;
+$m-10: 10px;
+$m-15: 15px;
+$m-5rem: 5rem;
+
+$fw-no: 400;
+$fw-bo: bold;
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.margin-admin {
+  margin-right: 15%;
+  margin-left: 10px;
+}

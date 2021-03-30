@@ -1,0 +1,199 @@
+.course-detail {
+  margin-top: 55px;
+  position: relative;
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img-course-detail {
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    .over-play {
+      background-color: rgba(75, 75, 75, 0.2);
+      width: 100%;
+      height: 100%;
+      z-index: 998;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 86px;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+    }
+  }
+  .course-detail-header {
+    background-color: rgb(27, 28, 29);
+    color: white;
+    width: 100%;
+
+    // .img-course-detail {
+    //   position: relative;
+    //   margin-top: 20px;
+    //   .over-play {
+    //     background-color: rgba(75, 75, 75, 0.2);
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 998;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     .play-icon {
+    //       position: absolute;
+    //       top: 50%;
+    //       left: 50%;
+    //       font-size: 86px;
+    //       z-index: 999;
+    //       transform: translate(-50%, -50%);
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
+  }
+  .course-detail-name {
+    @include text(white, $fs-30, $fw-bo);
+    padding-top: 20px;
+    @include MediaQuery($lg, down) {
+      @include text(white, $fs-20 + 5px, $fw-bo);
+    }
+    @include MediaQuery($sm, down) {
+      @include text(white, $fs-20, $fw-bo);
+    }
+  }
+  .course-detail-text {
+    overflow: hidden;
+  }
+  .bestseller {
+    padding: 4px;
+    border-radius: 3px;
+    margin: 8px 10px 10px 0;
+
+    background-color: rgb(236, 224, 116);
+    @include text(black, $fs-14, $fw-bo);
+  }
+  .star {
+    margin: 8px 0;
+    padding: 5px;
+    @include text(rgb(248, 183, 4), $fs-16 - 1px, $fw-no);
+    .number-rating {
+      @include text(#dc8400, $fs-16, $fw-bo);
+      padding-right: 3px;
+    }
+  }
+  .created-course-detail {
+    .name-created {
+      @include text(var(--color-2), $fs-16, $fw-bo);
+      text-decoration-line: underline;
+    }
+  }
+  .form {
+    .icon {
+      font-size: 20px;
+      padding-right: 8px;
+      color: white;
+    }
+  }
+  .price {
+    @include text(white, $fs-20 + 5px, $fw-bo);
+    .price-original {
+      @include text(white, $fs-14, $fw-no);
+      text-decoration: line-through;
+      margin-left: 5px;
+    }
+  }
+  .add-cart {
+    margin: 10px 0;
+  }
+  .days-30 {
+    @include text(white, $fs-14, $fw-bo);
+  }
+  .status-course-detail {
+    margin: 10px 0 20px;
+    // .item-mr {
+    //   padding: 0 5px;
+    // }
+
+    @include MediaQuery($lg, down) {
+      .item-left {
+        padding: 10px 10px 10px 0px !important;
+      }
+
+      .item-right {
+        padding: 10px 0 10px 10px !important;
+      }
+    }
+    // @include MediaQuery($lg, up) {
+    //   .item-left {
+    //     padding: 0;
+    //   }
+    //   .item-right {
+    //     padding: 0;
+    //   }
+    // }
+  }
+
+  .course-detail-body {
+    .title {
+      @include text(black, $fs-20, $fw-bo);
+    }
+    .what-learn {
+      background-color: rgb(247, 249, 250);
+      .what-learn-inner {
+        margin: 20px 0;
+        padding: 20px 20px 10px 20px;
+        ul {
+          li {
+            padding: 5px 0;
+            .text {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include MediaQuery($lg, up) {
+  .course-detail-left {
+    .header-inner,
+    .course-detail-body {
+      width: 68%;
+    }
+  }
+  .course-detail-right {
+    .right-inner {
+      position: fixed;
+      top: 12%;
+      right: 8%;
+      width: 25%;
+      background-color: white;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 5px; //hihi
+      .course-border {
+        border: 5px solid white;
+        border-radius: 5px !important; // hihi
+      }
+      .img-course-detail {
+        margin-top: 0;
+      }
+      .price,
+      .price-original,
+      .days-30 {
+        color: black;
+      }
+      .price {
+        margin: 10px;
+        font-size: 30px;
+      }
+      .add-cart {
+        margin: 10px;
+      }
+    }
+  }
+}

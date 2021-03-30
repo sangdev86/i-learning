@@ -1,0 +1,91 @@
+.course {
+  padding: 8px;
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s all;
+  }
+
+  .course-content {
+    background-color: var(--color-8);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    &:hover {
+      border: 1px solid var(--color-3);
+      transition: 0.5s all;
+    }
+    .unregistation {
+      color: rgb(202, 2, 2);
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 20px;
+      z-index: 999;
+      &:hover {
+        color: rgb(138, 32, 32);
+      }
+    }
+    .course-top {
+      &:hover {
+        text-decoration: none;
+        border: 1px solid var(--color-3);
+      }
+      .course-img {
+        position: relative;
+        img {
+          height: 135px;
+          width: 100%;
+        }
+      }
+      .content_box {
+        // width: 255px;
+        @include text(var(--color-5), $fs-16 - 2px, $fw-no);
+        overflow: hidden;
+        text-transform: capitalize;
+        padding: 10px 10px 5px;
+        .course-name {
+          height: 40px;
+          font-weight: $fw-bo;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .course-bot {
+      padding: 0px 8px;
+      .price {
+        .price-sale {
+          @include text(var(--color-5), $fs-16 + 2px, $fw-bo);
+        }
+        .price-origin {
+          @include text(var(--color-5), $fs-16 - 5px, $fw-no);
+          text-decoration: line-through;
+          opacity: 0.8;
+        }
+      }
+      .star {
+        @include text(rgb(248, 183, 4), $fs-16 - 1px, $fw-no);
+        .number-rating {
+          @include text(#dc8400, $fs-16 - 3px, $fw-bo);
+          padding-right: 1px;
+        }
+      }
+    }
+  }
+  @include MediaQuery($sm, up) {
+    .price-sale {
+      font-size: 16px !important;
+    }
+    .star {
+      font-size: 12px !important;
+    }
+  }
+  @include MediaQuery($lg, up) {
+    .price-sale {
+      font-size: 18px !important;
+    }
+    .star {
+      font-size: 16px !important;
+    }
+  }
+}
